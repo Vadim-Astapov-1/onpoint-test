@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -15,7 +14,8 @@ module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: production ? '[name].[contenthash].js' : '[name].js',
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
     clean: true,
   },
   devtool: production ? 'source-map' : 'inline-source-map',
@@ -56,7 +56,7 @@ module.exports = {
         exclude: /node_modules/,
         type: production ? 'asset' : 'asset/resource',
         generator: {
-          filename: `images/${production ? '[name][ext]' : '[hash][ext][query]'}`,
+          filename: 'images/[name][ext]',
         },
       },
       {
@@ -64,7 +64,7 @@ module.exports = {
         exclude: /node_modules/,
         type: production ? 'asset' : 'asset/resource',
         generator: {
-          filename: `fonts/${production ? '[name][ext]' : '[hash][ext][query]'}`,
+          filename: 'fonts/[name][ext]',
         },
       },
     ],
@@ -72,24 +72,13 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.css'],
   },
-  optimization: {
-    runtimeChunk: true,
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: production ? '[name].[contenthash].css' : '[name].css',
-    }),
-    new webpack.ids.HashedModuleIdsPlugin({
-      hashFunction: 'md4',
-      hashDigest: 'base64',
-      hashDigestLength: 8,
+      filename: '[name].css',
     }),
   ],
 };
