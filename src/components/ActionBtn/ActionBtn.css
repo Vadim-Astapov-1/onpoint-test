@@ -1,0 +1,63 @@
+.action-btn {
+  padding: 0;
+  border-radius: 40px;
+  border: 0;
+  background-color: #ff6a9f;
+  cursor: pointer;
+}
+
+.action-btn_type_promo {
+  position: absolute;
+  bottom: 18px;
+  right: 110px;
+}
+
+.action-btn_type_brend {
+
+}
+
+.action-btn__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.action-btn__circle {
+  margin: 11px 0 11px 11px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(132deg, rgba(176,78,120,1) 25%, rgba(255,162,195,1) 72%);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn__circle::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #171717;
+}
+
+.action-btn__symbol {
+  position: relative;
+  width: 40px;
+  height: 35px;
+  fill: #ffffff;
+}
+
+.action-btn__text {
+  margin: 0;
+  padding: 0 35px 0 15px;
+  font-family: 'DINPro';
+  font-weight: 400;
+  font-size: 26.83px;
+  line-height: 27px;
+}
