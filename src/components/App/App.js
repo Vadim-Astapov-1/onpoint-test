@@ -7,9 +7,9 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 
 function App() {
-  const [translateX, setTranslateX] = useState(0);
+  const [translateX, setTranslateX] = useState(1024);
   const [startCoordinate, setStartCoordinate] = useState(0);
-  const [slidePosition, setSlidePosition] = useState(1);
+  const [slidePosition, setSlidePosition] = useState(2);
 
   function handleScrollRight() {
     if (slidePosition >= 3) {
