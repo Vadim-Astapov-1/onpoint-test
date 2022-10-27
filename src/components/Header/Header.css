@@ -4,6 +4,7 @@
   left: 70px;
   display: flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .header__icon {

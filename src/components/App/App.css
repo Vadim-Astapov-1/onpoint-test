@@ -5,4 +5,5 @@
   background-color: #ffffff;
   margin: 0 auto;
   min-height: 100vh;
+  overflow: hidden;
 }

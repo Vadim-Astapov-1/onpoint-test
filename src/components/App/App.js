@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 
 import Header from '../Header/Header';
 import Main from '../Main/Main';
@@ -6,10 +7,59 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 
 function App() {
+  const [translateX, setTranslateX] = useState(0);
+  const [startCoordinate, setStartCoordinate] = useState(0);
+  const [slidePosition, setSlidePosition] = useState(1);
+
+  function handleScrollRight() {
+    if (slidePosition >= 3) {
+      return;
+    }
+
+    setTranslateX(translateX + window.innerWidth);
+    setSlidePosition(slidePosition + 1);
+  }
+
+  function handleScollLeft() {
+    if (slidePosition <= 1) {
+      return;
+    }
+
+    setTranslateX(translateX - window.innerWidth);
+    setSlidePosition(slidePosition - 1);
+  }
+
+  function handleScrollToHome() {
+    setTranslateX(0);
+  }
+
+  function handleObserverClick(evt) {
+    let start = parseInt(evt.changedTouches[0].clientX);
+    setStartCoordinate(start);
+  }
+
+  function handleObserverEnd(evt) {
+    let end = parseInt(evt.changedTouches[0].clientX);
+    let difference = startCoordinate - end;
+
+    if (difference > 0 && Math.abs(difference) > 100) {
+      return handleScrollRight();
+    }
+
+    if (difference < 0 && Math.abs(difference) > 100) {
+      return handleScollLeft();
+    }
+  }
+
   return (
     <div className='App'>
-      <Header />
-      <Main />
+      <Header onScroll={handleScrollToHome} />
+      <Main
+        translateCoordinates={translateX}
+        scrollToDesc={handleScrollRight}
+        touchClick={handleObserverClick}
+        touchEnd={handleObserverEnd}
+      />
       <Footer />
       <Popup />
     </div>

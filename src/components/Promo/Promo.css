@@ -1,10 +1,12 @@
 .promo {
-  max-width: 100%;
+  width: 100%;
   min-height: 100vh;
   margin: 0 auto;
   background-color: transparent;
   display: flex;
   flex-direction: column;
+  position: relative;
+  grid-row: 1/2;
 }
 
 .promo__container {
@@ -40,4 +42,71 @@
 .promo__span-accent {
   font-family: 'Gilroy';
   font-weight: 800;
+}
+
+/* Бактерии */
+
+.promo__bakti-one {
+
+}
+
+.promo__bakti-two {
+
+}
+
+.promo__bakti-three {
+
+}
+
+.promo__bakti-four {
+
+}
+
+.promo__bakti-five {
+  width: 71px;
+  height: 64px;
+  position: absolute;
+  top: 35px;
+  right: 36px;
+  object-fit: contain;
+}
+
+.promo__bakti-six {
+  width: 85px;
+  height: 79px;
+  position: absolute;
+  bottom: 59px;
+  left: 347px;
+  object-fit: contain;
+}
+
+.promo__bakti-seven {
+  width: 192px;
+  height: 123px;
+  position: absolute;
+  top: 72px;
+  left: -60px;
+  object-fit: contain;
+}
+
+.promo__bakti-eight {
+  width: 280px;
+  height: 193px;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  object-fit: contain;
+}
+
+.promo__bakti-nine {
+  width: 602px;
+  height: 93px;
+  position: absolute;
+  top: 185px;
+  right: 0;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none;
 }
