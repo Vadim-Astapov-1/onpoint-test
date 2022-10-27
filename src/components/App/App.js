@@ -31,13 +31,16 @@ function App() {
 
   function handleScrollToHome() {
     setTranslateX(0);
+    setSlidePosition(1);
   }
 
+  // Нажатие пальцем - захват стартовой точки
   function handleObserverClick(evt) {
     let start = parseInt(evt.changedTouches[0].clientX);
     setStartCoordinate(start);
   }
 
+  // Отпуск пальца - начнется расчет разницы. Если она превышает 100px начнется скроллинг.
   function handleObserverEnd(evt) {
     let end = parseInt(evt.changedTouches[0].clientX);
     let difference = startCoordinate - end;

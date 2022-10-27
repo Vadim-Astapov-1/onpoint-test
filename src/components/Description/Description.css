@@ -4,3 +4,44 @@
   flex-direction: column;
   grid-row: 1/2;
 }
+
+.description__container {
+  margin: 136px 130px 0 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description__title {
+  max-width: 180px;
+  margin: 0;
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+}
+
+.description__wrapper {
+  margin-top: 52px;
+  max-width: 825px;
+}
+
+.description__container-wrapper {
+  max-width: 100%;
+  height: 405px;
+  direction: rtl;
+  overflow: auto;
+}
+
+.description__text {
+  max-width: 714px;
+  margin: 0 0 0 59px;
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  font-size: 21.24px;
+  line-height: 28.97px;
+  direction: ltr;
+}
+
+.description__span-accent {
+  font-weight: bold;
+}
