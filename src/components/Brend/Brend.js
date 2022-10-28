@@ -9,7 +9,7 @@ function Brend({ openPopup }) {
   return (
     <section className='brend'>
       <div className='brend__container'>
-        <p className='brend__paragraph'>Ключевое сообщение</p>
+        <h3 className='brend__subtitle'>Ключевое сообщение</h3>
         <h2 className='brend__title'>
           Brend<span className='brend__span-accent'>xy</span>
         </h2>

@@ -2,10 +2,10 @@ import './Popup.css';
 
 import Slider from '../Slider/Slider';
 
-function Popup({ isOpen }) {
+function Popup({ isOpen, onClose }) {
   return (
     <div className={`popup ${isOpen ? 'popup_opened' : ''}`}>
-      <Slider />
+      <Slider onClose={onClose} />
     </div>
   );
 }

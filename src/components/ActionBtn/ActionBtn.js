@@ -1,7 +1,7 @@
 import './ActionBtn.css';
 
-import plusIcon from '../../images/plus.svg';
-import strelkaIcon from '../../images/strelka.svg';
+import plusIcon from '../../images/icon-plus.svg';
+import strelkaIcon from '../../images/icon-strelka.svg';
 
 function ActionBtn({ mode, onClick }) {
   return (

@@ -6,9 +6,9 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 function App() {
-  const [translateX, setTranslateX] = useState(0);
+  const [translateX, setTranslateX] = useState(2048);
   const [startCoordinate, setStartCoordinate] = useState(0);
-  const [slidePosition, setSlidePosition] = useState(1);
+  const [slidePosition, setSlidePosition] = useState(3);
 
   function handleScrollRight() {
     if (slidePosition >= 3) {

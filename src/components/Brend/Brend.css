@@ -9,7 +9,7 @@
   margin: 169px auto 0 228px;
 }
 
-.brend__paragraph {
+.brend__subtitle {
   max-width: 100%;
   margin: 0 0 0 125px;
   font-family: 'DIN Pro';
@@ -28,6 +28,7 @@
   font-weight: 400;
   font-size: 95px;
   line-height: 95px;
+  color: #242424;
   text-transform: uppercase;
   z-index: 2;
 }

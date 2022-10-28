@@ -25,7 +25,7 @@ function Main({ translateCoordinates, scrollToDesc, touchClick, touchEnd }) {
       <Description />
       <Brend openPopup={handlePopupOpen} />
       <Spray />
-      <Popup isOpen={popupIsOpen} />
+      <Popup isOpen={popupIsOpen} onClose={handlePopupOpen} />
     </main>
   );
 }
