@@ -8,6 +8,7 @@
 
 .slider__container {
   max-width: 100%;
+  min-height: 589.5px;
   border-radius: 35px;
   background-color: #ffffff;
   display: flex;
@@ -46,15 +47,28 @@
   max-width: 488px;
   margin: 33.5px 0 107px 212px;
   list-style: none;
+  position: relative;
 }
 
 .slider__item {
   max-width: 100%;
+  min-height: 280px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__item_visible {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
 }
 
 .slider__item-content:nth-child(2n) {

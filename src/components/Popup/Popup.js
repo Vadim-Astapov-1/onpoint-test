@@ -5,7 +5,7 @@ import Slider from '../Slider/Slider';
 function Popup({ isOpen, onClose }) {
   return (
     <div className={`popup ${isOpen ? 'popup_opened' : ''}`}>
-      <Slider onClose={onClose} />
+      <Slider isOpen={isOpen} onClose={onClose} />
     </div>
   );
 }
