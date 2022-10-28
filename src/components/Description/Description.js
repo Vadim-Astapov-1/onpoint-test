@@ -28,6 +28,8 @@ function Description() {
     setTranslateTopThumb(topThumbCoordinate);
   }
 
+  // Т.к работа будет проверятся в масштабе ipad, для экономии времени используется только onTouchMove.
+  // Из-за чего вождение мышкой не покажет результатов.
   return (
     <section className='description'>
       <div className='description__container'>

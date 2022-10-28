@@ -15,9 +15,11 @@
   max-width: 180px;
   margin: 0;
   font-family: 'DIN Pro';
+  font-style: normal;
   font-weight: 400;
   font-size: 27px;
   line-height: 27px;
+  color: #242424;
 }
 
 .description__body {
@@ -36,6 +38,7 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  z-index: 1;
 }
 
 .description__scroll-truck {
@@ -63,6 +66,7 @@
   background-color: #ffffff;
   border-radius: 35px;
   position: relative;
+  box-shadow: 0 0 100px 40px #e9eff2;
 }
 
 .description__container-text {
@@ -88,9 +92,11 @@
   max-width: 100%;
   margin: 0;
   font-family: 'DIN Pro';
+  font-style: normal;
   font-weight: 400;
   font-size: 21.24px;
   line-height: 28.97px;
+  color: #242424;
 }
 
 .description__span-accent {

@@ -7,9 +7,14 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 
 function App() {
-  const [translateX, setTranslateX] = useState(1024);
+  const [translateX, setTranslateX] = useState(2048);
   const [startCoordinate, setStartCoordinate] = useState(0);
-  const [slidePosition, setSlidePosition] = useState(2);
+  const [slidePosition, setSlidePosition] = useState(3);
+  const [popupIsOpen, setPopupIsOpen] = useState(false);
+
+  function handlePopupOpen() {
+    setPopupIsOpen(!popupIsOpen);
+  }
 
   function handleScrollRight() {
     if (slidePosition >= 3) {
@@ -62,9 +67,10 @@ function App() {
         scrollToDesc={handleScrollRight}
         touchClick={handleObserverClick}
         touchEnd={handleObserverEnd}
+        handlePopupOpen={handlePopupOpen}
       />
       <Footer />
-      <Popup />
+      <Popup isOpen={popupIsOpen} />
     </div>
   );
 }

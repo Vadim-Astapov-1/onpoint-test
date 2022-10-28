@@ -4,7 +4,7 @@ import Promo from '../Promo/Promo';
 import Description from '../Description/Description';
 import Brend from '../Brend/Brend';
 
-function Main({ translateCoordinates, scrollToDesc, touchClick, touchEnd }) {
+function Main({ translateCoordinates, scrollToDesc, touchClick, touchEnd, handlePopupOpen }) {
   return (
     <main
       className='main'
@@ -14,7 +14,7 @@ function Main({ translateCoordinates, scrollToDesc, touchClick, touchEnd }) {
     >
       <Promo onScroll={scrollToDesc} />
       <Description />
-      <Brend />
+      <Brend openPopup={handlePopupOpen} />
     </main>
   );
 }

@@ -24,15 +24,31 @@ function Promo({ onScroll }) {
           <ActionBtn mode='btn-scroll' onClick={onScroll} />
         </div>
       </div>
-      <img className='promo__bakti-one hidden' src={baktiActiveOne} alt='Bacteria'></img>
-      <img className='promo__bakti-two hidden' src={baktiActiveTwo} alt='Bacteria'></img>
-      <img className='promo__bakti-three hidden' src={baktiActiveThree} alt='Bacteria'></img>
-      <img className='promo__bakti-four hidden' src={baktiActiveFour} alt='Bacteria'></img>
-      <img className='promo__bakti-five' src={baktiBlurOne} alt='Bacteria'></img>
-      <img className='promo__bakti-six' src={baktiBlurTwo} alt='Bacteria'></img>
-      <img className='promo__bakti-seven' src={baktiLongOne} alt='Bacteria'></img>
-      <img className='promo__bakti-eight' src={spermPinkOne} alt='Bacteria'></img>
-      <img className='promo__bakti-nine' src={spermPinkTwo} alt='Bacteria'></img>
+      <img
+        className='promo__bakti promo__bakti_type_one hidden'
+        src={baktiActiveOne}
+        alt='Bacteria'
+      ></img>
+      <img
+        className='promo__bakti promo__bakti_type_two hidden'
+        src={baktiActiveTwo}
+        alt='Bacteria'
+      ></img>
+      <img
+        className='promo__bakti promo__bakti_type_three hidden'
+        src={baktiActiveThree}
+        alt='Bacteria'
+      ></img>
+      <img
+        className='promo__bakti promo__bakti_type_four hidden'
+        src={baktiActiveFour}
+        alt='Bacteria'
+      ></img>
+      <img className='promo__bakti promo__bakti_type_five' src={baktiBlurOne} alt='Bacteria'></img>
+      <img className='promo__bakti promo__bakti_type_six' src={baktiBlurTwo} alt='Bacteria'></img>
+      <img className='promo__bakti promo__bakti_type_seven' src={baktiLongOne} alt='Bacteria'></img>
+      <img className='promo__bakti promo__bakti_type_eight' src={spermPinkOne} alt='Bacteria'></img>
+      <img className='promo__bakti promo__bakti_type_nine' src={spermPinkTwo} alt='Bacteria'></img>
     </section>
   );
 }

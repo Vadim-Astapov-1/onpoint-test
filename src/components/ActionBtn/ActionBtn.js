@@ -16,7 +16,11 @@ function ActionBtn({ mode, onClick }) {
       <div className='action-btn__container'>
         <div className='action-btn__circle'>
           <img
-            className='action-btn__symbol'
+            className={`action-btn__symbol ${
+              mode === 'btn-scroll'
+                ? 'action-btn__symbol_type_promo'
+                : 'action-btn__symbol_type_brend'
+            }`}
             src={mode === 'btn-scroll' ? strelkaIcon : plusIcon}
             alt='symbol'
           ></img>

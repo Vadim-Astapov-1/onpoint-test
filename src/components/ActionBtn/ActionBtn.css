@@ -4,6 +4,7 @@
   border: 0;
   background-color: #ff6a9f;
   cursor: pointer;
+  z-index: 1;
 }
 
 .action-btn_type_promo {
@@ -13,7 +14,7 @@
 }
 
 .action-btn_type_brend {
-
+  position: static;
 }
 
 .action-btn__container {
@@ -48,9 +49,19 @@
 
 .action-btn__symbol {
   position: relative;
-  width: 40px;
-  height: 35px;
+  width: 35px;
+  height: 30px;
   fill: #ffffff;
+}
+
+.action-btn__symbol_type_promo {
+  width: 35px;
+  height: 30px;
+}
+
+.action-btn__symbol_type_brend {
+  width: 22px;
+  height: 22px;
 }
 
 .action-btn__text {

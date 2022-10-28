@@ -19,9 +19,11 @@
   max-width: 100%;
   margin: 0 0 36px 0;
   font-family: 'DIN Pro';
+  font-style: normal;
   font-weight: 400;
   font-size: 27px;
   line-height: 27px;
+  color: #242424;
 }
 
 .promo__body {
@@ -33,10 +35,12 @@
   max-width: 100%;
   margin: 0;
   font-family: 'Gilroy';
+  font-style: normal;
   font-weight: 300;
   font-size: 109px;
   line-height: 117px;
   text-transform: uppercase;
+  color: #242424;
 }
 
 .promo__span-accent {
@@ -46,67 +50,58 @@
 
 /* Бактерии */
 
-.promo__bakti-one {
+.promo__bakti {
+  position: absolute;
+  object-fit: contain;
+}
+
+.promo__bakti_type_one {
 
 }
 
-.promo__bakti-two {
+.promo__bakti_type_two {
 
 }
 
-.promo__bakti-three {
+.promo__bakti_type_three {
 
 }
 
-.promo__bakti-four {
+.promo__bakti_type_four {
 
 }
 
-.promo__bakti-five {
+.promo__bakti_type_five {
   width: 71px;
   height: 64px;
-  position: absolute;
   top: 35px;
   right: 36px;
-  object-fit: contain;
 }
 
-.promo__bakti-six {
+.promo__bakti_type_six {
   width: 85px;
   height: 79px;
-  position: absolute;
   bottom: 59px;
   left: 347px;
-  object-fit: contain;
 }
 
-.promo__bakti-seven {
+.promo__bakti_type_seven {
   width: 192px;
   height: 123px;
-  position: absolute;
   top: 72px;
   left: -60px;
-  object-fit: contain;
 }
 
-.promo__bakti-eight {
+.promo__bakti_type_eight {
   width: 280px;
   height: 193px;
-  position: absolute;
   bottom: 0;
   left: 0px;
-  object-fit: contain;
 }
 
-.promo__bakti-nine {
+.promo__bakti_type_nine {
   width: 602px;
   height: 93px;
-  position: absolute;
   top: 185px;
   right: 0;
-  object-fit: contain;
-}
-
-.hidden {
-  display: none;
 }

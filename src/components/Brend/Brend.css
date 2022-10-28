@@ -1,4 +1,148 @@
 .brend {
   min-width: 100%;
   grid-row: 1/2;
+  position: relative;
 }
+
+.brend__container {
+  max-width: 717px;
+  margin: 169px auto 0 228px;
+}
+
+.brend__paragraph {
+  max-width: 100%;
+  margin: 0 0 0 125px;
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 27px;
+  color: #242424;
+}
+
+.brend__title {
+  max-width: 100%;
+  margin: 0 0 0 120px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 95px;
+  line-height: 95px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.brend__span-accent {
+  font-weight: 800;
+}
+
+.brend__desc {
+  max-width: 100%;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 414px 263px;
+  gap: 20px 40px;
+}
+
+.brend__window {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 35px;
+  box-shadow: 0 0 100px 40px #e9eff2;
+}
+
+.brend__window_type_plate {
+  padding: 49px 53px 75px 125px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.brend__window_type_calender {
+  padding: 49px 88px 50px 41px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.brend__window-icon {
+  position: absolute;
+  object-fit: contain;
+}
+
+.brend__window-icon_type_plate {
+  width: 67px;
+  height: 63px;
+  right: 223px;
+  top: -35px;
+}
+
+.brend__window-icon_type_calender {
+  width: 73px;
+  height: 58px;
+  right: 155px;
+  top: -26px;
+}
+
+.brend__text {
+  margin: 0;
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.brend__spray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 353px;
+  height: 100vh;
+  z-index: 1;
+}
+
+.brend__spray-img {
+  width: 233px;
+  height: 688px;
+  position: absolute;
+  object-fit: contain;
+  bottom: 0;
+  left: 50px;
+}
+
+.brend__bubble {
+  position: absolute;
+  object-fit: contain;
+}
+
+.brend__bubble_type_one {
+
+}
+
+.brend__bubble_type_two {
+
+}
+
+.brend__bubble_type_three {
+
+}
+
+.brend__bubble_type_four {
+
+}
+
+.brend__bubble_type_five {
+
+}
+
+.brend__bubble_type_six {
+
+}
+
+.brend__bubble_type_seven {
+
+}
+
+.brend__bubble_type_eight {
+
+}
+
