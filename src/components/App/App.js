@@ -4,17 +4,11 @@ import { useState } from 'react';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
-import Popup from '../Popup/Popup';
 
 function App() {
   const [translateX, setTranslateX] = useState(0);
   const [startCoordinate, setStartCoordinate] = useState(0);
   const [slidePosition, setSlidePosition] = useState(1);
-  const [popupIsOpen, setPopupIsOpen] = useState(false);
-
-  function handlePopupOpen() {
-    setPopupIsOpen(!popupIsOpen);
-  }
 
   function handleScrollRight() {
     if (slidePosition >= 3) {
@@ -67,10 +61,8 @@ function App() {
         scrollToDesc={handleScrollRight}
         touchClick={handleObserverClick}
         touchEnd={handleObserverEnd}
-        handlePopupOpen={handlePopupOpen}
       />
       <Footer />
-      <Popup isOpen={popupIsOpen} />
     </div>
   );
 }

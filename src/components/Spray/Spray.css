@@ -1,0 +1,89 @@
+.spray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 353px;
+  height: 100vh;
+  z-index: 5;
+  grid-column: 3/4;
+}
+
+.spray__img {
+  width: 233px;
+  height: 688px;
+  position: absolute;
+  object-fit: contain;
+  bottom: 0;
+  left: 50px;
+  z-index: 2;
+}
+
+/* Пузыри */
+
+.spray__bubble {
+  position: absolute;
+  object-fit: contain;
+}
+
+/* Синие */
+
+.spray__bubble_type_one {
+  width: 38px;
+  height: 39px;
+  top: 65px;
+  left: 197px;
+}
+
+.spray__bubble_type_two {
+  width: 69px;
+  height: 70px;
+  top: 155px;
+  left: 183px;
+  z-index: 3;
+}
+
+.spray__bubble_type_three {
+  width: 34px;
+  height: 34px;
+  bottom: 281px;
+  left: 10px;
+}
+
+.spray__bubble_type_four {
+  width: 61px;
+  height: 62px;
+  bottom: 115px;
+  left: 242px;
+}
+
+.spray__bubble_type_five {
+  width: 142px;
+  height: 65px;
+  bottom: 0;
+  left: 184px;
+  z-index: 2;
+}
+
+/* Розовые */
+
+.spray__bubble_type_six {
+  width: 34px;
+  height: 35px;
+  top: 212px;
+  left: 77px;
+}
+
+.spray__bubble_type_seven {
+  width: 113px;
+  height: 112px;
+  top: 317px;
+  left: 186px;
+}
+
+.spray__bubble_type_eight {
+  width: 75px;
+  height: 75px;
+  bottom: 140px;
+  left: 25px;
+  z-index: 2;
+}

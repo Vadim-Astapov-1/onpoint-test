@@ -5,13 +5,6 @@ import ActionBtn from '../ActionBtn/ActionBtn';
 import iconPlate from '../../images/brend-img/plate.png';
 import iconCalender from '../../images/brend-img/calender.png';
 
-import bubbleBlue from '../../images/brend-img/bubble-blue.png';
-import bubbleBlueBig from '../../images/brend-img/bubble-blue-big.png';
-import bubblePinkOne from '../../images/brend-img/bubble-pink-1.png';
-import bubblePinkTwo from '../../images/brend-img/bubble-pink-2.png';
-import bubblePinkThree from '../../images/brend-img/bubble-pink-3.png';
-import spray from '../../images/brend-img/splinker.png';
-
 function Brend({ openPopup }) {
   return (
     <section className='brend'>
@@ -42,49 +35,6 @@ function Brend({ openPopup }) {
           </div>
           <ActionBtn name='btn-popup' onClick={openPopup} />
         </div>
-      </div>
-      <div className='brend__spray'>
-        <img className='brend__spray-img' src={spray} alt='Spray'></img>
-        <img
-          className='brend__bubble brend__bubble_type_one'
-          src={bubbleBlue}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_two'
-          src={bubbleBlue}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_three'
-          src={bubbleBlue}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_four'
-          src={bubbleBlue}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_five'
-          src={bubbleBlueBig}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_six'
-          src={bubblePinkOne}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_seven'
-          src={bubblePinkTwo}
-          alt='Bubble'
-        ></img>
-        <img
-          className='brend__bubble brend__bubble_type_eight'
-          src={bubblePinkThree}
-          alt='Bubble'
-        ></img>
       </div>
     </section>
   );
