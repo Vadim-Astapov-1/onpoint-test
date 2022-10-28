@@ -25,22 +25,22 @@ function Promo({ onScroll }) {
         </div>
       </div>
       <img
-        className='promo__bakti promo__bakti_type_one hidden'
+        className='promo__bakti promo__bakti_type_one'
         src={baktiActiveOne}
         alt='Bacteria'
       ></img>
       <img
-        className='promo__bakti promo__bakti_type_two hidden'
+        className='promo__bakti promo__bakti_type_two'
         src={baktiActiveTwo}
         alt='Bacteria'
       ></img>
       <img
-        className='promo__bakti promo__bakti_type_three hidden'
+        className='promo__bakti promo__bakti_type_three'
         src={baktiActiveThree}
         alt='Bacteria'
       ></img>
       <img
-        className='promo__bakti promo__bakti_type_four hidden'
+        className='promo__bakti promo__bakti_type_four'
         src={baktiActiveFour}
         alt='Bacteria'
       ></img>

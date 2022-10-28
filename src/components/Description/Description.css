@@ -20,6 +20,7 @@
   font-size: 27px;
   line-height: 27px;
   color: #242424;
+  z-index: 1;
 }
 
 .description__body {

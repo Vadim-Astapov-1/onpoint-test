@@ -41,6 +41,8 @@
   line-height: 117px;
   text-transform: uppercase;
   color: #242424;
+  position: relative;
+  z-index: 1;
 }
 
 .promo__span-accent {
@@ -55,21 +57,37 @@
   object-fit: contain;
 }
 
-.promo__bakti_type_one {
+/* Активные */
 
+.promo__bakti_type_one {
+  width: 63px;
+  height: 58px;
+  top: 61px;
+  right: 217px;
 }
 
 .promo__bakti_type_two {
-
+  width: 112px;
+  height: 114px;
+  top: 200px;
+  right: 52px;
 }
 
 .promo__bakti_type_three {
-
+  width: 74px;
+  height: 72px;
+  bottom: 193px;
+  left: 22px;
 }
 
 .promo__bakti_type_four {
-
+  width: 228px;
+  height: 127px;
+  bottom: 0;
+  left: 524px;
 }
+
+/* Статичные */
 
 .promo__bakti_type_five {
   width: 71px;
@@ -104,4 +122,5 @@
   height: 93px;
   top: 185px;
   right: 0;
+  z-index: 2;
 }

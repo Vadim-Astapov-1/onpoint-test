@@ -7,9 +7,9 @@ import Footer from '../Footer/Footer';
 import Popup from '../Popup/Popup';
 
 function App() {
-  const [translateX, setTranslateX] = useState(2048);
+  const [translateX, setTranslateX] = useState(0);
   const [startCoordinate, setStartCoordinate] = useState(0);
-  const [slidePosition, setSlidePosition] = useState(3);
+  const [slidePosition, setSlidePosition] = useState(1);
   const [popupIsOpen, setPopupIsOpen] = useState(false);
 
   function handlePopupOpen() {
