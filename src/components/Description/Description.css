@@ -111,6 +111,14 @@
 .description__sperm {
   position: absolute;
   object-fit: contain;
+  opacity: 0;
+  transform: translateX(150px) translateY(60px);
+  transition: 1.5s;
+}
+
+.description__sperm_animations_active {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
 }
 
 .description__sperm_type_one {

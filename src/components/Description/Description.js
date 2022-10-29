@@ -1,5 +1,5 @@
 import './Description.css';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import spermOne from '../../images/desc-img/sperm-1.png';
 import spermTwo from '../../images/desc-img/sperm-2.png';
@@ -8,6 +8,8 @@ import spermFour from '../../images/desc-img/sperm-4.png';
 import spermFive from '../../images/desc-img/sperm-5.png';
 
 function Description() {
+  const descContainerRef = useRef();
+  const [animateIsActive, setAnimateIsActive] = useState(false);
   // max 30%
   const [translateY, setTranslateY] = useState(0);
   // max 80%
@@ -34,11 +36,36 @@ function Description() {
     setTranslateTopThumb(topThumbCoordinate);
   }
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.boundingClientRect.left < 0) {
+          return;
+        }
+
+        setAnimateIsActive(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0,
+      }
+    );
+
+    const target = descContainerRef.current;
+
+    observer.observe(target);
+
+    return () => {
+      observer.unobserve(target);
+    };
+  }, [descContainerRef]);
+
   // Т.к работа будет проверятся в масштабе ipad, для экономии времени используется только onTouchMove.
   // Из-за чего вождение мышкой не покажет результатов.
   return (
     <section className='description'>
-      <div className='description__container'>
+      <div className='description__container' ref={descContainerRef}>
         <h2 className='description__title'>Текст сообщения</h2>
         <div className='description__body'>
           <div className='description__scroll' onTouchMove={mouseMove}>
@@ -77,27 +104,37 @@ function Description() {
         </div>
       </div>
       <img
-        className='description__sperm description__sperm_type_one'
+        className={`description__sperm description__sperm_type_one ${
+          animateIsActive ? 'description__sperm_animations_active' : ''
+        }`}
         src={spermOne}
         alt='Sperm'
       ></img>
       <img
-        className='description__sperm description__sperm_type_two'
+        className={`description__sperm description__sperm_type_two ${
+          animateIsActive ? 'description__sperm_animations_active' : ''
+        }`}
         src={spermTwo}
         alt='Sperm'
       ></img>
       <img
-        className='description__sperm description__sperm_type_three'
+        className={`description__sperm description__sperm_type_three ${
+          animateIsActive ? 'description__sperm_animations_active' : ''
+        }`}
         src={spermThree}
         alt='Sperm'
       ></img>
       <img
-        className='description__sperm description__sperm_type_four'
+        className={`description__sperm description__sperm_type_four ${
+          animateIsActive ? 'description__sperm_animations_active' : ''
+        }`}
         src={spermFour}
         alt='Sperm'
       ></img>
       <img
-        className='description__sperm description__sperm_type_five'
+        className={`description__sperm description__sperm_type_five ${
+          animateIsActive ? 'description__sperm_animations_active' : ''
+        }`}
         src={spermFive}
         alt='Sperm'
       ></img>
