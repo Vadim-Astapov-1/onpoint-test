@@ -15,6 +15,7 @@
   "scripts": {
     "start": "webpack-dev-server --node-env=development --config ./webpack/webpack.config.js",
     "build": "webpack --node-env=production --config ./webpack/webpack.config.js",
+    "deploy": "npm run build && gh-pages -d dist",
     "react-start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +47,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.13",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss-loader": "^7.0.1",
