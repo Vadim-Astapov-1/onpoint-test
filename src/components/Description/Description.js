@@ -1,5 +1,11 @@
-import { useRef, useState } from 'react';
 import './Description.css';
+import { useRef, useState } from 'react';
+
+import spermOne from '../../images/desc-img/sperm-1.png';
+import spermTwo from '../../images/desc-img/sperm-2.png';
+import spermThree from '../../images/desc-img/sperm-3.png';
+import spermFour from '../../images/desc-img/sperm-4.png';
+import spermFive from '../../images/desc-img/sperm-5.png';
 
 function Description() {
   // max 30%
@@ -70,6 +76,31 @@ function Description() {
           </div>
         </div>
       </div>
+      <img
+        className='description__sperm description__sperm_type_one'
+        src={spermOne}
+        alt='Sperm'
+      ></img>
+      <img
+        className='description__sperm description__sperm_type_two'
+        src={spermTwo}
+        alt='Sperm'
+      ></img>
+      <img
+        className='description__sperm description__sperm_type_three'
+        src={spermThree}
+        alt='Sperm'
+      ></img>
+      <img
+        className='description__sperm description__sperm_type_four'
+        src={spermFour}
+        alt='Sperm'
+      ></img>
+      <img
+        className='description__sperm description__sperm_type_five'
+        src={spermFive}
+        alt='Sperm'
+      ></img>
     </section>
   );
 }
