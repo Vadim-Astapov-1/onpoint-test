@@ -22,7 +22,7 @@ function Slider({ isOpen, onClose }) {
         <h2 className='slider__title'>
           Brend<span className='slider__span-accent'>xy</span>
         </h2>
-        {/* Fix: Дочерний visibility: visible стоит поверх секции, из-за чего кнопка полностью не нажималась */}
+        {/* Fix: Дочерний visibility: visible стоит поверх секции, что загораживало кнопку */}
         {isOpen ? (
           <>
             <div className='slider__window'>
