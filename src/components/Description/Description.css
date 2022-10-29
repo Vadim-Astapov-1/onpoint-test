@@ -1,5 +1,5 @@
 .description {
-  min-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   grid-row: 1/2;

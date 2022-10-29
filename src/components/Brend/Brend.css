@@ -1,5 +1,5 @@
 .brend {
-  min-width: 100%;
+  width: 100%;
   grid-row: 1/2;
   position: relative;
 }

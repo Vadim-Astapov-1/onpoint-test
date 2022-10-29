@@ -1,10 +1,10 @@
 .main {
-  min-width: 3072px;
+  width: calc(100vw * 3);
   background-image: url(../../images/bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 100vw);
   transition: 1s;
 }
